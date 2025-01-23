@@ -1,2 +1,23 @@
-# Clock-ESP32
-A DIY Clock that connects to Wi-Fi and gets his time from a NTP-server, it works with an I2C LCD Module and a buzzer as alarm and a button to change the state of the alarm.
+Slimme Wekker met LCD-scherm en Alarmfunctie
+Dit project bouwt een slimme wekker met de volgende functies:
+
+Weergave van tijd, datum, en jaar op een I2C LCD-scherm.
+Een alarm dat kan worden in- of uitgeschakeld via een drukknop.
+Het alarm speelt een toon af op een buzzer op de ingestelde tijd.
+Logging van tijd (uur en minuten) in de seriële monitor elke 5 seconden.
+Ondersteuning voor Belgische tijd, inclusief zomer- en wintertijd.
+Benodigdheden
+ESP32 of een Arduino-compatibel microcontrollerboard.
+I2C LCD-scherm (16x2).
+Buzzer (actief of passief).
+Drukknop.
+Jumper wires, breadboard en een pull-up weerstand van 10kΩ.
+Wi-Fi-verbinding.
+Schema
+Onderdeel	Pin ESP32	Pin Onderdelen
+LCD SDA	GPIO 21	SDA (LCD)
+LCD SCL	GPIO 22	SCL (LCD)
+Buzzer (+)	GPIO 25	Positief
+Buzzer (-)	GND	Negatief
+Knop	GPIO 26	Eén pin
+Pull-up	3.3V	Andere pin knop
